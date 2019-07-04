@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from 'nestjs-config';
 import * as path from 'path';
 import { AppService } from './app.service';
+import { DatabaseModule } from './db';
 
 import { DefaultModule } from './default';
 
@@ -9,6 +10,7 @@ import { DefaultModule } from './default';
   exports: [AppService],
   imports: [
     ConfigModule.load(path.resolve(__dirname, 'config', '**/!(*.d).{ts,js}')),
+    DatabaseModule,
     DefaultModule,
   ],
   providers: [AppService],
