@@ -57,8 +57,11 @@ export class LoggerService {
     }
 
     error(msg: any, trace?: string, context?: string) {
-        this.logger.error(msg, [{ context }]);
-        this.logger.error(trace, [{ context, reqId: this.requestId }]);
+        this.logger.error(msg, [{ context, reqId: this.requestId }]);
+
+        if (trace) {
+            this.logger.debug(trace, [{ context, reqId: this.requestId }]);
+        }
     }
 
     private getLoggerFormat() {
@@ -67,7 +70,6 @@ export class LoggerService {
             let message = info.message;
 
             if (typeof info.message === 'object') {
-                // message = JSON.stringify(message, null, 3);
                 message = colorize(JSON.stringify(message));
             }
 

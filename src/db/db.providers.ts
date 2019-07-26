@@ -4,6 +4,7 @@ import { ConfigService } from 'nestjs-config';
 export const databaseProviders = {
     inject: [ConfigService],
     provide: 'DATABASE_CONNECTION',
+
     useFactory: async (config: ConfigService) => createConnection({
         database: config.get('db.database'),
         type: config.get('db.type'),

@@ -3,8 +3,8 @@ import { DefaultController } from './default.controller';
 import { DefaultService } from './default.service';
 
 @Module({
-  imports: [],
-  controllers: [DefaultController],
-  providers: [DefaultService],
+    imports: [],
+    controllers: [DefaultController],
+    providers: [DefaultService],
 })
 export class DefaultModule {}
