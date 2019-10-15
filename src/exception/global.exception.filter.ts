@@ -108,6 +108,6 @@ export class GlobalExceptionFilter implements ExceptionFilter {
             return exception.message;
         }
 
-        return 'Internal server error.';
+        return 'Internal server error';
     }
 }

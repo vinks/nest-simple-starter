@@ -28,6 +28,6 @@ export class AppModule {
         consumer.apply(CookieParserMiddleware).forRoutes('*');
         consumer.apply(HelmetMiddleware).forRoutes('*');
         consumer.apply(CorsMiddleware).forRoutes('*');
-        consumer.apply(ServeFaviconMiddleware).forRoutes('*');
+        // consumer.apply(ServeFaviconMiddleware).forRoutes('*');
     }
 }

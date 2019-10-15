@@ -1,0 +1,60 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "Nest simple starter API",
+      "version": "1.0",
+      "title": "Nest simple starter"
+    },
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "nest-simple-starter",
+        "description": ""
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "getHello",
+          "description": "getHello description",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          },
+          "tags": [
+            "default-controller"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ]
+        }
+      },
+      "/exception": {
+        "get": {
+          "summary": "getException",
+          "description": "getException description",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          },
+          "tags": [
+            "default-controller"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ]
+        }
+      }
+    }
+}
