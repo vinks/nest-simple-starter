@@ -7,7 +7,6 @@ import { CookieParserMiddleware } from '@nest-middlewares/cookie-parser';
 import { CorsMiddleware } from '@nest-middlewares/cors';
 import { HelmetMiddleware } from '@nest-middlewares/helmet';
 import { AppService } from './app.service';
-import { DatabaseModule } from './db';
 import { LoggerModule } from './logger';
 
 import { DefaultModule } from './default';
@@ -30,7 +29,6 @@ import { DefaultModule } from './default';
             }),
             inject: [ConfigService],
         }),
-        DatabaseModule,
         LoggerModule,
         DefaultModule,
     ],
