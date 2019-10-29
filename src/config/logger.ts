@@ -1,5 +1,7 @@
+import { env } from '../yenv';
+
 export default {
-    level: process.env.LOGGER_LEVEL || 'debug',
+    level: env.LOGGER_LEVEL || 'debug',
     loggers: ['console'],
     timeFormat: 'YYYY-MM-DD HH:mm:ss',
 };

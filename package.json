@@ -44,7 +44,8 @@
     "swagger-ui-express": "^4.1.2",
     "typeorm": "^0.2.19",
     "uuid": "^3.3.3",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "yenv": "^2.1.0"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.8.3",
