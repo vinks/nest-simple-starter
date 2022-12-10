@@ -27,7 +27,7 @@
     "@nest-middlewares/serve-favicon": "^6.0.1",
     "@nestjs/common": "^6.8.3",
     "@nestjs/core": "^6.8.3",
-    "@nestjs/platform-express": "^6.8.3",
+    "@nestjs/platform-express": "^9.2.1",
     "@nestjs/swagger": "^3.1.0",
     "@nestjs/typeorm": "^6.2.0",
     "cli-color": "^2.0.0",
